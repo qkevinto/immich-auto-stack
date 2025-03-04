@@ -79,7 +79,7 @@ def apply_criteria(x: dict) -> list:
     return criteria_list
 
 def parent_criteria(x):
-  parent_ext = ['.jpg', '.jpeg', '.png']
+  parent_ext = ['.orf', '.cr2', '.nef', '.dng', '.raw']
 
   parent_promote = list(filter(None, os.environ.get("PARENT_PROMOTE", "").split(",")))
   parent_promote_baseline = 0
